@@ -1,0 +1,37 @@
+{
+  "name": "rn-web-lottie",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "index.js",
+    "yarn.lock"
+  ],
+  "dependencies": {
+    "lottie-web": "^5.9.6"
+  },
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "mkdir -p dist && babel index.js --out-dir dist --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/runtime": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-react-native-web": "^0.10.0",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-security": "^1.5.0",
+    "prettier": "^1.17.1",
+    "webpack": "^3.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "17.0.1",
+    "react-native-web": "^0.17.5"
+  }
+}
